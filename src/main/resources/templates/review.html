@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th "http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/reviewstyle.css" th:href="@{/css/reviewstyle.css}" />
+	<title>review</title>
+</head>
+<body>
+    <h1>Review</h1>
+    
+    <div th:each = "review: ${reviews}">
+    	<p th:text = "${review.title}"></p>
+    	<p th:text = "${review.body}"></p>
+    	<img th:src = "${review.picture}"  style = "width:200px;height:172px"></img>
+    	<p></p>
+    	<a href = "http://localhost:8080/show-reviews">Back to home</a>
+    </div>
+</body>
+</html>

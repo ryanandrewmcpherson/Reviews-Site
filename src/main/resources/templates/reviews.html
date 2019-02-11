@@ -1,0 +1,18 @@
+<html xmlns:th "https://www.thymeleaf.org">
+<head>
+   <title> reviews </title>
+       <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/homestyle.css" th:href="@{/css/homestyle.css}" />
+</head>
+<body>
+ 
+   <h1> Awesome Reviews </h1>
+
+   
+   <div th:each = "review: ${reviews}">
+   		<li> 
+   		<span><a th:href = "@{/review(id=${review.id})}" th:text = "${review.title}"> </a></span>
+   		</li>
+   </div>
+</body>
+</html>
