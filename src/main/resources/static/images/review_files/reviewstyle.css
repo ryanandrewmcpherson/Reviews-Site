@@ -21,7 +21,6 @@ background-color:#191919;
 img{
 width:25%;
 height:25%;
-padding:20px;
 }
 
 div{
@@ -35,7 +34,9 @@ p{
 margin-left:auto;
 margin-right:auto;
 list-style-type: none;
+animation-name:li;
 width:fit-content;
+padding:20px;
 font-family:sans-serif;
 text-align:center;
 vertical-align:middle;

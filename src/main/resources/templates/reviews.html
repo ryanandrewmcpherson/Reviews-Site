@@ -11,6 +11,7 @@
    
    <div th:each = "review: ${reviews}">
    		<li> 
+   		<p th:text = "${review.category}"> </p>
    		<span><a th:href = "@{/review(id=${review.id})}" th:text = "${review.title}"> </a></span>
    		</li>
    </div>

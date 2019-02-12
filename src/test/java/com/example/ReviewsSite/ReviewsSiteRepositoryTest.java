@@ -15,10 +15,10 @@ public class ReviewsSiteRepositoryTest {
 	ReviewsSiteRepository undertest;
 	
 	private Long id = 1L;
-	private Review firstReview = new Review(id,"title","body","picture");
+	private Review firstReview = new Review(id,"category","title","body","picture");
 	
 	private Long id2 = 2L;
-	private Review secondReview = new Review(id2,"title","body","picture");
+	private Review secondReview = new Review(id2,"category","title","body","picture");
 
 	@Test
 	public void shouldFindAReview(){

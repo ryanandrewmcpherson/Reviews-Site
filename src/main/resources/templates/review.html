@@ -7,13 +7,11 @@
 	<title>review</title>
 </head>
 <body>
-    <h1>Review</h1>
-    
     <div th:each = "review: ${reviews}">
+        <h1 th:text = "${review.category} + ' ' + Review"></h1>
+        <img th:src = "${review.picture}"></img>
     	<p th:text = "${review.title}"></p>
     	<p th:text = "${review.body}"></p>
-    	<img th:src = "${review.picture}"  style = "width:200px;height:172px"></img>
-    	<p></p>
     	<a href = "http://localhost:8080/show-reviews">Back to home</a>
     </div>
 </body>

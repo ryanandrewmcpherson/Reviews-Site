@@ -6,10 +6,12 @@ public class Review {
 	private String title ;
 	private String body;
 	private String picture;
+	private String category;
 	
 
-	public Review(long id, String title, String body, String picture) {
+	public Review(long id, String category, String title, String body, String picture) {
 		this.setId(id);
+		this.setCategory(category);
 		this.setTitle(title);
 		this.setBody(body);
 		this.setPicture(picture);
@@ -45,6 +47,14 @@ public class Review {
 
 	public void setPicture(String picture) {
 		this.picture = picture;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 }
