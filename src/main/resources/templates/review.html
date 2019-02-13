@@ -10,7 +10,7 @@
     <div th:each = "review: ${reviews}">
         <h1 th:text = "${review.category} + ' ' + Review"></h1>
         <img th:src = "${review.picture}"></img>
-    	<p th:text = "${review.title}"></p>
+    	<h2 th:text = "${review.title}"></h2>
     	<p th:text = "${review.body}"></p>
     	<a href = "http://localhost:8080/show-reviews">Back to home</a>
     </div>

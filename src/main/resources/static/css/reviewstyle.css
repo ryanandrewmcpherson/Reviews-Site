@@ -38,7 +38,10 @@ list-style-type: none;
 width:fit-content;
 font-family:sans-serif;
 text-align:center;
-vertical-align:middle;
+color:#E32319;
+}
+
+h2{
 color:#E32319;
 }
 
